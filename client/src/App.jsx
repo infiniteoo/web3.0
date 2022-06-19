@@ -1,8 +1,24 @@
-import "../dist/output.css";
+import {
+  Navbar,
+  Loader,
+  Footer,
+  Services,
+  Transactions,
+  Welcome,
+} from "./components";
+
 const App = () => {
-  return <h1 class="text-3xl font-bold underline">
-  Hello world!
-</h1>;
+  return (
+    <div className="min-h-screen">
+      <div className="gradient-bg-welcome">
+        <Navbar />
+        <Welcome />
+      </div>
+      <Services />
+      <Transactions />
+      <Footer />
+    </div>
+  );
 };
 
 export default App;
